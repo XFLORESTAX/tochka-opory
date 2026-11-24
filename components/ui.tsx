@@ -25,7 +25,7 @@ export function Header() {
 }
 
 export function Hero({club = false}: {club?: boolean}) {
-  return <section className={'hero '+(club?'club-hero':'')}>
+  return <section className={'hero '+(club?'club-hero':'home-hero')}>
     <Image fill preload sizes="100vw" src={club?'/images/club.jpg':'/images/hero.jpg'} alt="" />
     <div className="wrap hero-content">
       <div className="eyebrow"><span />{club?'ОБЩЕСТВО И САМОПОЗНАНИЕ':'ПРОСТРАНСТВО ПСИХОЛОГИИ'}</div>
