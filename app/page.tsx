@@ -35,7 +35,10 @@ export default function Home() {
    <div className="cards">{services.slice(0,4).map(service=><ServiceCard key={service.id} service={service}/>)}</div>
   </div></section>
   <section id="consultation-topics" className="section sand"><div className="wrap">
-   <SectionTitle>С какими запросами можно обратиться</SectionTitle>
+   <div className="consultation-topics-heading">
+    <Image className="consultation-portrait" src="/images/consultation-portrait.jpg" width={512} height={512} alt="Портрет автора проекта" />
+    <SectionTitle>С какими запросами можно обратиться</SectionTitle>
+   </div>
    <div className="cards consultation-topics">
     {consultationTopics.map(([id, title, description]) => (
      <details className="service-card consultation-topic" key={id}>

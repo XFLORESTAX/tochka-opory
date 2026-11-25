@@ -67,6 +67,8 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:1.25rem;font-weight:450}
 details[open]>summary::after{content:"−"}
 details>p{margin-top:10px}
+.consultation-topics-heading{text-align:center}
+.consultation-portrait{display:block;width:clamp(112px,19vw,170px);height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;margin:0 auto 22px;padding:5px;border:1px solid #b79b68;background:var(--milk)}
 .consultation-topics{align-items:start}
 .consultation-topic summary{display:grid;grid-template-columns:20px minmax(0,1fr) auto;gap:10px;min-height:66px;padding:10px 12px}
 .consultation-topic summary:hover{background:var(--milk)}
