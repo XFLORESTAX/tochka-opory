@@ -28,11 +28,11 @@ export function Hero({club = false}: {club?: boolean}) {
   return <section className={'hero '+(club?'club-hero':'home-hero')}>
     <Image fill preload sizes="100vw" src={club?'/images/club.jpg':'/images/hero.jpg'} alt="" />
     <div className="wrap hero-content">
-      <div className="eyebrow"><span />{club?'ОБЩЕСТВО И САМОПОЗНАНИЕ':'ПРОСТРАНСТВО ПСИХОЛОГИИ'}</div>
-      <h1>{club?<>Ближе <em>к себе</em></>:<>Всё начинается<br /><em>с тебя.</em></>}</h1>
+      <div className="eyebrow"><span />{club?'ЧАСТНЫЙ КЛУБ':'ПРОСТРАНСТВО ПСИХОЛОГИИ'}</div>
+      <h1>{club?<>Точка <em>опоры</em></>:<>Всё начинается<br /><em>с тебя.</em></>}</h1>
       <p>{club?'Клуб для тех, кто хочет лучше слышать себя и обсуждать важное в бережном сообществе.':'Индивидуальные консультации и сообщество для тех, кто хочет лучше понимать себя и найти опору в переменах.'}</p>
       <div className="actions"><Link className="btn light" href={club?'#join':'/booking'}>{club?'Вступить в клуб':'Записаться на консультацию'}</Link>
-      <Link className="btn ghost" href={club?'#club-about':'/club'}>{club?'О клубе':'О клубе «Ближе к себе»'}</Link></div>
+      <Link className="btn ghost" href={club?'#club-about':'/club'}>{club?'О клубе':'О частном клубе'}</Link></div>
     </div>
   </section>
 }
@@ -71,8 +71,8 @@ export function About() {
 
 export function ClubPreview() {
   return <section className="section forest"><div className="wrap split">
-    <div><SectionTitle label="КЛУБ">Ближе к себе</SectionTitle>
-      <p>Годовая программа о границах, отношениях и заботе о себе. Каждый месяц посвящён одной теме, которую можно обсуждать на встречах и исследовать в своём темпе между ними.</p>
+    <div><SectionTitle label="ЧАСТНЫЙ КЛУБ">Точка опоры</SectionTitle>
+      <p>Годовая программа «Ближе к себе» о границах, отношениях и заботе о себе. Каждый месяц посвящён одной теме, которую можно обсуждать на встречах и исследовать в своём темпе между ними.</p>
       <Link className="btn light" href="/club">Посмотреть программу</Link></div>
     <div className="arch media"><Image fill sizes="(max-width:750px) 100vw, 50vw" src="/images/club.jpg" alt="Горы и лес в вечернем свете" /></div>
   </div></section>

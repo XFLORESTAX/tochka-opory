@@ -88,6 +88,7 @@ details>p{margin-top:10px}
 .topics{grid-template-columns:repeat(3,1fr)}
 .steps li,.topics li{counter-increment:item;border-top:1px solid var(--line);padding:16px 0 0}
 .steps li::before,.topics li::before{content:counter(item,decimal-leading-zero);font-size:.85rem;color:#526655;display:block;margin-bottom:12px}
+.topics li::before{content:"Месяц " counter(item)}
 .plan-price{font-family:var(--serif);font-size:3.2rem;line-height:1;margin:12px 0}
 .muted{margin-top:18px}
 .booking-form{padding:24px;background:var(--milk);border:1px solid var(--line)}
