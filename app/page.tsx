@@ -3,7 +3,7 @@ import { About, ClubPreview, FAQ, Hero, ProgramCard, SectionTitle, ServiceCard }
 import { BookingForm } from '@/components/BookingForm'
 import { services } from '@/lib/catalog'
 import { draft, pageMetadata } from '@/lib/site'
-export const metadata = pageMetadata('Всё начинается с тебя','Форматы индивидуальных консультаций, программы и частный клуб «Точка опоры».','/')
+export const metadata = pageMetadata('Всё начинается с тебя','Форматы индивидуальных консультаций, программы и частный клуб «Ближе к себе».','/')
 
 const questions = [
   ['Как проходят встречи?','Встречи проходят онлайн. Время и ссылку согласовывают по контакту из заявки.'],
