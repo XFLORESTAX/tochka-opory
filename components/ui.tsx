@@ -31,7 +31,7 @@ export function Hero({club = false}: {club?: boolean}) {
       <div className="eyebrow"><span />{club?'ОБЩЕСТВО И САМОПОЗНАНИЕ':'ПРОСТРАНСТВО ПСИХОЛОГИИ'}</div>
       <h1>{club?<>Ближе <em>к себе</em></>:<>Всё начинается<br /><em>с тебя.</em></>}</h1>
       <p>{club?'Клуб для тех, кто хочет лучше слышать себя и обсуждать важное в бережном сообществе.':'Индивидуальные консультации и сообщество для тех, кто хочет лучше понимать себя и найти опору в переменах.'}</p>
-      <div className="actions"><Link className="btn light" href={club?'#plans':'/booking'}>{club?'Посмотреть тарифы':'Записаться на консультацию'}</Link>
+      <div className="actions"><Link className="btn light" href={club?'#join':'/booking'}>{club?'Вступить в клуб':'Записаться на консультацию'}</Link>
       <Link className="btn ghost" href={club?'#club-about':'/club'}>{club?'О клубе':'О клубе «Ближе к себе»'}</Link></div>
     </div>
   </section>
